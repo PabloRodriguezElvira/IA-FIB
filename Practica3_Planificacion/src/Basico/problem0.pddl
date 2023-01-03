@@ -11,7 +11,7 @@
     
     (:init
         (= (recursosDisponibles) 8)
-        
+ 
         (Conecta asentamiento1 almacen1)
         (Conecta almacen1 asentamiento1)
         (Conecta asentamiento2 almacen1)
@@ -20,6 +20,10 @@
         (Conecta almacen2 asentamiento2)
         (Conecta asentamiento3 almacen2)
         (Conecta almacen2 asentamiento3)
+
+        (Estacionado buga1 almacen1)
+        (Estacionado buga2 asentamiento1)
+        (Estacionado buga3 asentamiento3)
 
         (En Pepe asentamiento1)
         (En Fernando asentamiento2)
@@ -32,5 +36,22 @@
 
         (ContenidoPeticion id0 Pepe)
         (DestinoPeticion id0 asentamiento2)
+
+        (ContenidoPeticion id1 Fernando)
+        (DestinoPeticion id1 asentamiento2)
+
+        (ContenidoPeticion id2 David) 
+        (DestinoPeticion id2 asentamiento1)
+        
+        (ContenidoPeticion id3 Risketos) 
+        (DestinoPeticion id3 asentamiento2)
+
+        (ContenidoPeticion id4 Doritos) 
+        (DestinoPeticion id4 asentamiento1)
+
+        (ContenidoPeticion id5 Macarrones) 
+        (DestinoPeticion id5 asentamiento3)
     )
+    
+    (:goal (or (forall (?p - peticion) (Servida ?p)) (= (recursosDisponibles) 0)))
 )

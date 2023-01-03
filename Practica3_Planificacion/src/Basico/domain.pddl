@@ -1,6 +1,6 @@
 (define (domain VidaEnMarte)
 
-    (:requirements :strips :typing :fluents)
+    (:requirements :strips :typing :fluents :adl)
 
     (:types 
         base cargamento rover peticion - object
@@ -16,27 +16,28 @@
         (En ?x - cargamento ?y - base)
         (Estacionado ?x - rover ?y - base)
         (Conecta ?x - base  ?y - base)
-        (Dentro ?x - movil ?y - rover)
-        (ContenidoPeticion ?x - peticion ?y - movil)
+        (Dentro ?x - peticion ?y - rover)
+        (ContenidoPeticion ?x - peticion ?y - cargamento)
         (DestinoPeticion ?x - peticion ?y - asentamiento)
+        (PeticionCargada ?x - peticion)
         (Servida ?x - peticion)
     )
 
-    (:action moverRover
+    (:action mover_rover
         :parameters (?rover - rover ?origen - base ?destino - base)
         :precondition (and (Estacionado ?rover ?origen) (Conecta ?origen ?destino))
-        :effect (and (Estacionado ?rover ?destino) (not (Estacionado ?rover ?origen)))
+        :effect (and (not (Estacionado ?rover ?origen)) (Estacionado ?rover ?destino))
     )
 
     (:action cargar
-        :parameters (?mvl - movil ?base - base ?rover - rover)
-        :precondition (and (En ?mvl ?base) (Estacionado ?rover ?base))
-        :effect (and (not (En ?mvl ?base)) (Dentro ?mvl ?rover))
+        :parameters (?carga - cargamento ?base - base ?rover - rover ?peticion - peticion)
+        :precondition (and (En ?carga ?base) (Estacionado ?rover ?base) (not (PeticionCargada ?peticion)) (ContenidoPeticion ?peticion ?carga))
+        :effect (and (not (En ?carga ?base)) (Dentro ?peticion ?rover) (PeticionCargada ?peticion))
     )
 
     (:action descargar
-        :parameters (?mvl - movil ?asentamiento - asentamiento ?rover - rover ?peticion - peticion)
-        :precondition (and (Estacionado ?rover ?asentamiento) (Dentro ?mvl ?rover) (ContenidoPeticion ?peticion ?mvl) (DestinoPeticion ?peticion ?asentamiento))
-        :effect (and (not (Dentro ?mvl ?rover)) (Servida ?peticion))
+        :parameters (?carga - cargamento ?asentamiento - asentamiento ?rover - rover ?peticion - peticion)
+        :precondition (and (Estacionado ?rover ?asentamiento) (Dentro ?peticion ?rover) (ContenidoPeticion ?peticion ?carga) (DestinoPeticion ?peticion ?asentamiento))
+        :effect (and (not (Dentro ?peticion ?rover)) (Servida ?peticion) (decrease (recursosDisponibles) 1))
     )
 )
