@@ -37,7 +37,7 @@
 
     (:action descargar
         :parameters (?carga - cargamento ?asentamiento - asentamiento ?rover - rover ?peticion - peticion)
-        :precondition (and (Estacionado ?rover ?asentamiento) (Dentro ?peticion ?rover) (ContenidoPeticion ?peticion ?carga) (DestinoPeticion ?peticion ?asentamiento))
+        :precondition (and (not (Servida ?peticion)) (Estacionado ?rover ?asentamiento) (Dentro ?peticion ?rover) (ContenidoPeticion ?peticion ?carga) (DestinoPeticion ?peticion ?asentamiento))
         :effect (and (not (Dentro ?peticion ?rover)) (Servida ?peticion) (decrease (recursosDisponibles) 1))
     )
 )

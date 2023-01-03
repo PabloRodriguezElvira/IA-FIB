@@ -1,5 +1,5 @@
-(define (problem Problema0_Basico)
-    (:domain VidaEnMarte_Basico)
+(define (problem Problema0_Extension1)
+    (:domain VidaEnMarte_Extension1)
     (:objects
         buga1 buga2 buga3 - rover
         Pepe Fernando David Carlos - personal
@@ -11,6 +11,14 @@
     
     (:init
         (= (recursosDisponibles) 8)
+
+        (= (personalEnRover buga1) 0)
+        (= (personalEnRover buga2) 0)
+        (= (personalEnRover buga3) 0)
+
+        (= (suministrosEnRover buga1) 0)
+        (= (suministrosEnRover buga2) 0)
+        (= (suministrosEnRover buga3) 0)
  
         (Conecta asentamiento1 almacen1)
         (Conecta almacen1 asentamiento1)
