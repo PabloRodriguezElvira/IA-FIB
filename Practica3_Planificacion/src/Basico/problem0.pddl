@@ -1,5 +1,5 @@
 (define (problem ProblemaBasico)
-    (:domain VidaEnMarte)
+    (:domain VidaEnMarte_Basico)
     (:objects
         buga1 buga2 buga3 - rover
         Pepe Fernando David Carlos - personal

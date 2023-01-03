@@ -1,4 +1,4 @@
-(define (domain VidaEnMarte)
+(define (domain VidaEnMarte_Basico)
 
     (:requirements :strips :typing :fluents :adl)
 
