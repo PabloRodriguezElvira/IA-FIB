@@ -2,6 +2,8 @@ import argparse
 import random as rand
 from dataclasses import dataclass
 from typing import List, Tuple
+import networkx as nx
+import matplotlib.pyplot as plt
 
 
 class Formatter:
@@ -72,14 +74,26 @@ def create_graph(asentamientos: List[str], almacenes: List[str]) -> Tuple[List[N
 
     nodes = [Node(name, []) for name in asentamientos + almacenes]
 
-    for v in range(numVertexs):
-        num = rand.randint(2, numVertexs-2)
+    for node in range(len(nodes)):
+        if node+1 < len(nodes):
+            matrix[node][node+1] = True
 
-        while num > 0:
-            u = rand.randint(0, numVertexs-2)
-            if not matrix[v][u] and v != u:
-                matrix[v][u] = True
-                num -= 1
+        num = rand.randint(0, numVertexs-2)
+        for _ in range(num):
+            selected = rand.randint(0, node)
+            if selected != node:
+                matrix[node][selected] = True
+
+    # Mostrar grafo
+    G = nx.DiGraph()
+    for row in range(len(matrix)):
+        for col in range(len(matrix)):
+            if matrix[row][col]:
+                G.add_edge(row, col)
+
+    nx.draw(G)
+    plt.show()
+    ### 
 
     return nodes, matrix
 
@@ -123,7 +137,6 @@ class Problem:
             if opcion not in self.nodes[id].elements:
                 self.peticiones.append(
                     Peticion(f"id{i}", opcion, asentamiento, rand.randint(1, 3)))
-                opciones.remove(opcion)
                 i += 1
 
     def print(self) -> str:
