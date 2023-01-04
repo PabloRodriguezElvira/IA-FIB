@@ -42,7 +42,7 @@ class Formatter:
     (:init {self.generate_inits()} 
     )
 
-    (:goal (or (forall (?p - peticion) (Servida ?p)) (= (recursosDisponibles) 0)))
+    (:goal (or (forall (?p - peticion) (Servida ?p)) (= (recursosDisponibles) 0) (= (combusibleTotal) 0)))
     (:metric maximize (+ (* (prioridadTotal) 5) (* (combusibleTotal) 2)))
 )
 '''
@@ -77,12 +77,14 @@ def create_graph(asentamientos: List[str], almacenes: List[str]) -> Tuple[List[N
     for node in range(len(nodes)):
         if node+1 < len(nodes):
             matrix[node][node+1] = True
+            matrix[node+1][node] = True
 
         num = rand.randint(0, numVertexs-2)
         for _ in range(num):
             selected = rand.randint(0, node)
             if selected != node:
                 matrix[node][selected] = True
+                matrix[selected][node] = True
 
     # Mostrar grafo
     G = nx.DiGraph()
@@ -91,7 +93,11 @@ def create_graph(asentamientos: List[str], almacenes: List[str]) -> Tuple[List[N
             if matrix[row][col]:
                 G.add_edge(row, col)
 
-    nx.draw(G)
+
+    pos = nx.spring_layout(G)
+    labels = {i:nodes[i].name for i in range(len(nodes))}
+
+    nx.draw_networkx(G, pos=pos, labels=labels)
     plt.show()
     ### 
 
@@ -129,7 +135,7 @@ class Problem:
         self.peticiones = []
         opciones = self.personal.copy() + self.suministros.copy()
         i = 0
-        while i < numPeticiones:
+        while i < numPeticiones and len(opciones) > 0:
             opcion = rand.choice(opciones)
             asentamiento = rand.choice(self.asentamientos)
             id = self.asentamientos.index(asentamiento)
@@ -137,6 +143,8 @@ class Problem:
             if opcion not in self.nodes[id].elements:
                 self.peticiones.append(
                     Peticion(f"id{i}", opcion, asentamiento, rand.randint(1, 3)))
+
+                opciones.remove(opcion)
                 i += 1
 
     def print(self) -> str:
@@ -151,11 +159,11 @@ class Problem:
         formatter.add_objects(
             "peticion", [pet.name for pet in self.peticiones])
 
-        # (= (recursosDisponibles) 8)
-        formatter.add_init_function("recursosDisponibles", 8)
+        # recursosDisponibles
+        formatter.add_init_function("recursosDisponibles", len(self.personal) + len(self.suministros))
 
         # personalEnRover, suministrosEnRover & combustibleEnRover
-        COMBUSTIBLE_BASE = 8
+        COMBUSTIBLE_BASE = 12
         for rover in self.rovers:
             formatter.add_init_function("personalEnRover", 0, rover)
             formatter.add_init_function("suministrosEnRover", 0, rover)

@@ -76,7 +76,7 @@
         (DestinoPeticion id5 asentamiento3)
     )
     
-    (:goal (or (forall (?p - peticion) (Servida ?p)) (= (recursosDisponibles) 0)))
+    (:goal (or (forall (?p - peticion) (Servida ?p)) (= (recursosDisponibles) 0) (= (combusibleTotal) 0)))
 
     (:metric maximize (prioridadTotal))
 )
