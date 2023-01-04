@@ -1,5 +1,4 @@
 (define (domain VidaEnMarte_Extension1)
-
     (:requirements :strips :typing :fluents :adl)
 
     (:types 

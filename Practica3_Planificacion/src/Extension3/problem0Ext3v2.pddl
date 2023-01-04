@@ -35,9 +35,6 @@
         (=(prioridad id4) 1)
         (=(prioridad id5) 3)
 
-        (=(pesoP) 5)
-        (=(pesoC) 2)
- 
         (Conecta asentamiento1 almacen1)
         (Conecta almacen1 asentamiento1)
         (Conecta asentamiento2 almacen1)
@@ -79,7 +76,7 @@
         (DestinoPeticion id5 asentamiento3)
     )
     
-    (:goal (or (forall (?p - peticion) (Servida ?p)) (= (recursosDisponibles) 0) (= (combusibleTotal) 0)))
+    (:goal (or (forall (?p - peticion) (Servida ?p)) (= (recursosDisponibles) 0))
 
-    (:metric maximize (+ (* (prioridadTotal) (pesoP)) (* (combusibleTotal) (pesoC))))
+    (:metric maximize (+ (* (prioridadTotal) 5) (* (combusibleTotal) 2)))
 )

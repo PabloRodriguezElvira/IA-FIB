@@ -22,14 +22,14 @@ class Formatter:
         self.init.append(f"({name} {' '.join(elements)})")
 
     def generate_objects(self, numSep: int = 8):
-        sep = f"\n" + " ".join(['' for _ in range(numSep)])
+        sep = f"\n" + " ".join(['' for _ in range(numSep-1)])
         output = ""
         for key in self.objects.keys():
             output += sep + " ".join(self.objects[key]) + " - " + key
         return output
 
     def generate_inits(self, numSep: int = 8):
-        sep = f"\n" + " ".join(['' for _ in range(numSep)])
+        sep = f"\n" + " ".join(['' for _ in range(numSep-1)])
         output = sep + sep.join(self.init)
         return output
 
@@ -42,7 +42,7 @@ class Formatter:
     (:init {self.generate_inits()} 
     )
 
-    (:goal (or (forall (?p - peticion) (Servida ?p)) (= (recursosDisponibles) 0) (= (combusibleTotal) 0)))
+    (:goal (or (forall (?p - peticion) (Servida ?p)) (= (recursosDisponibles) 0)))
     (:metric maximize (+ (* (prioridadTotal) 5) (* (combusibleTotal) 2)))
 )
 '''
@@ -93,15 +93,17 @@ def create_graph(asentamientos: List[str], almacenes: List[str]) -> Tuple[List[N
             if matrix[row][col]:
                 G.add_edge(row, col)
 
-
     pos = nx.spring_layout(G)
-    labels = {i:nodes[i].name for i in range(len(nodes))}
+    labels = {i: nodes[i].name for i in range(len(nodes))}
 
     nx.draw_networkx(G, pos=pos, labels=labels)
     plt.show()
-    ### 
+    ###
 
     return nodes, matrix
+
+
+COMBUSTIBLE_BASE = 12
 
 
 class Problem:
@@ -160,10 +162,10 @@ class Problem:
             "peticion", [pet.name for pet in self.peticiones])
 
         # recursosDisponibles
-        formatter.add_init_function("recursosDisponibles", len(self.personal) + len(self.suministros))
+        formatter.add_init_function("recursosDisponibles", len(
+            self.personal) + len(self.suministros))
 
         # personalEnRover, suministrosEnRover & combustibleEnRover
-        COMBUSTIBLE_BASE = 12
         for rover in self.rovers:
             formatter.add_init_function("personalEnRover", 0, rover)
             formatter.add_init_function("suministrosEnRover", 0, rover)
@@ -214,7 +216,7 @@ if __name__ == "__main__":
     parser.add_argument("-r", "--rovers", default=4, help="Número de rovers")
     parser.add_argument("-pe", "--personal", default=10,
                         help="Número de personal")
-    parser.add_argument("-s", "--suministro", default=6,
+    parser.add_argument("-s", "--suministros", default=6,
                         help="Número de suministros")
     parser.add_argument("-as", "--asentamientos", default=4,
                         help="Número de asentamientos")
@@ -222,10 +224,14 @@ if __name__ == "__main__":
                         help="Número de almacenes")
     parser.add_argument("-p", "--peticiones", default=6,
                         help="Número de peticiones")
+    parser.add_argument("-g", "--gasolina", default=12,
+                        help="Gasolina base para cada rover")
 
     args = parser.parse_args()
 
-    problem = Problem(int(args.rovers), int(args.personal), int(args.suministro),
+    COMBUSTIBLE_BASE = int(args.gasolina)
+
+    problem = Problem(int(args.rovers), int(args.personal), int(args.suministros),
                       int(args.asentamientos), int(args.almacenes), int(args.peticiones))
     s = problem.print()
     print(s)
