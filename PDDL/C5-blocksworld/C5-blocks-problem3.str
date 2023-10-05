@@ -1,0 +1,11 @@
+/* problema BLOCKS-17-0 */
+
+clear(Q),clear(L),clear(G),clear(H),clear(P),ontable(M),
+ontable(K),ontable(O),ontable(N),ontable(P),on(Q,A),on(A,J),on(J,I),
+on(I,B),on(B,M),on(L,F),on(F,E),on(E,K),on(G,D),on(D,C),on(C,O),
+on(H,N),handempty().
+
+on(Q,N),on(N,L),on(L,O),on(O,J),on(J,H),on(H,C),
+on(C,E),on(E,M),on(M,P),on(P,A),on(A,G),on(G,B),on(B,I),on(I,K),
+on(K,F),on(F,D).
+

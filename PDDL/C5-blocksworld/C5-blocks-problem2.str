@@ -1,0 +1,6 @@
+/* problema BLOCKS-6-1 */
+
+clear(A),clear(B),clear(E),clear(C),clear(D),ontable(F),ontable(B),
+ontable(E),ontable(C),ontable(D),on(A,F),handempty().
+
+on(E,F),on(F,C),on(C,B),on(B,A),on(A,D).

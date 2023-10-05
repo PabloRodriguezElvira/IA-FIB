@@ -1,0 +1,10 @@
+- ¿como describo cada estado del problema?
+    -> Predicados ¿tipos?
+    -> (fluentes) 
+
+- ¿como cambio de estado a estado?
+    -> Acciones
+        -> Precondicion
+        -> Efectos
+
+
