@@ -1,0 +1,1185 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#"
+     xml:base="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#afecta -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#afecta">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Sintoma"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Persona"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#compuesto_por -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#compuesto_por">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Fase"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Ejercicio"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#enfermedades -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#enfermedades">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Persona"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Sintoma"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#realiza -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#realiza">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Persona"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Programa"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#tipo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#tipo">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Ejercicio"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#TipoEjercicio"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#altura -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#altura">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Persona"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#condicion_fisica -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#condicion_fisica">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Persona"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#dependencia -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#dependencia">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Persona"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#duracion -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#duracion">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Ejercicio"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Fase"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#edad -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#edad">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Persona"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#frecuencia_cardiovascular -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#frecuencia_cardiovascular">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Persona"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#material -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#material">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Ejercicio"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Persona"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#nivel_actividad_fisica -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#nivel_actividad_fisica">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Persona"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#nombre -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#nombre">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Ejercicio"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Persona"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Sintoma"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#parte_cuerpo -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#parte_cuerpo">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Ejercicio"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#peso -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#peso">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Persona"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#prioridad -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#prioridad">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Ejercicio"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#sexo -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#sexo">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Persona"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Calentamiento -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Calentamiento">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Fase"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#CondicionFisica -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#CondicionFisica">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Sintoma"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Ejercicio -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Ejercicio"/>
+    
+
+
+    <!-- http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Enfermedad -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Enfermedad">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Sintoma"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Fase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Fase"/>
+    
+
+
+    <!-- http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Persona -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Persona"/>
+    
+
+
+    <!-- http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Programa -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Programa"/>
+    
+
+
+    <!-- http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Reposo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Reposo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Fase"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Sesion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Sesion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Fase"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Sintoma -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Sintoma"/>
+    
+
+
+    <!-- http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#TipoEjercicio -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#TipoEjercicio"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Aerobico -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Aerobico">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#TipoEjercicio"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Equilibrio -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Equilibrio">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#TipoEjercicio"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Flexibilidad -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Flexibilidad">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#TipoEjercicio"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Resistencia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Resistencia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#TipoEjercicio"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#abdominales -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#abdominales">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Ejercicio"/>
+        <tipo rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Resistencia"/>
+        <material>colchoneta</material>
+        <nombre>Abdominales</nombre>
+        <parte_cuerpo>abdominales</parte_cuerpo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#andar -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#andar">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Ejercicio"/>
+        <tipo rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Aerobico"/>
+        <nombre>Andar</nombre>
+        <parte_cuerpo>piernas</parte_cuerpo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#andar_levantando_rodillas -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#andar_levantando_rodillas">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Ejercicio"/>
+        <tipo rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Equilibrio"/>
+        <nombre>Andar levantando las rodillas</nombre>
+        <parte_cuerpo>piernas</parte_cuerpo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#artrosis -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#artrosis">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Enfermedad"/>
+        <nombre>Artrosis</nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#baile -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#baile">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Ejercicio"/>
+        <tipo rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Aerobico"/>
+        <nombre>Baile</nombre>
+        <parte_cuerpo>brazos</parte_cuerpo>
+        <parte_cuerpo>cadera</parte_cuerpo>
+        <parte_cuerpo>piernas</parte_cuerpo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#biceps -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#biceps">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Ejercicio"/>
+        <tipo rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Resistencia"/>
+        <material>mancuernas</material>
+        <nombre>Biceps</nombre>
+        <parte_cuerpo>brazos</parte_cuerpo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#caidas_frecuentes -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#caidas_frecuentes">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#CondicionFisica"/>
+        <nombre>Problemas de caidas</nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#cardiaca -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#cardiaca">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Enfermedad"/>
+        <nombre>Enfermedad cardiaca</nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#ciclismo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#ciclismo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Ejercicio"/>
+        <tipo rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Aerobico"/>
+        <material>bicicleta</material>
+        <nombre>Ciclismo</nombre>
+        <parte_cuerpo>piernas</parte_cuerpo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#curl_biceps -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#curl_biceps">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Ejercicio"/>
+        <tipo rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Resistencia"/>
+        <nombre>Curl de biceps</nombre>
+        <parte_cuerpo>brazos</parte_cuerpo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#deltoides -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#deltoides">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Ejercicio"/>
+        <tipo rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Resistencia"/>
+        <material>mancuernas</material>
+        <nombre>Deltoides</nombre>
+        <parte_cuerpo>brazos</parte_cuerpo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#depresion -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#depresion">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Enfermedad"/>
+        <nombre>Depresion</nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#diabetes -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#diabetes">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Enfermedad"/>
+        <nombre>Diabetes</nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#diagonal_cuello -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#diagonal_cuello">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Ejercicio"/>
+        <tipo rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Flexibilidad"/>
+        <nombre>Diagonal de cuello</nombre>
+        <parte_cuerpo>cuello</parte_cuerpo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#disfuncion_brazos -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#disfuncion_brazos">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#CondicionFisica"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#dolor_abdominales -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#dolor_abdominales">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#CondicionFisica"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#dolor_brazos -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#dolor_brazos">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#CondicionFisica"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#dolor_cadera -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#dolor_cadera">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#CondicionFisica"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#dolor_cuello -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#dolor_cuello">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#CondicionFisica"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#dolor_espalda -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#dolor_espalda">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#CondicionFisica"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#dolor_hombros -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#dolor_hombros">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#CondicionFisica"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#dolor_piernas -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#dolor_piernas">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#CondicionFisica"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#elevacion_piernas -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#elevacion_piernas">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Ejercicio"/>
+        <tipo rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Resistencia"/>
+        <material>colchoneta</material>
+        <nombre>Elevacion de piernas</nombre>
+        <parte_cuerpo>piernas</parte_cuerpo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#elevacion_piernas_lateral -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#elevacion_piernas_lateral">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Ejercicio"/>
+        <tipo rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Equilibrio"/>
+        <tipo rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Resistencia"/>
+        <nombre>Elevacion de piernas lateralmente</nombre>
+        <parte_cuerpo>piernas</parte_cuerpo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#elongacion_lateral -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#elongacion_lateral">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Ejercicio"/>
+        <tipo rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Flexibilidad"/>
+        <nombre>Elongacion lateral</nombre>
+        <parte_cuerpo>brazos</parte_cuerpo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#estiramiento_brazos -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#estiramiento_brazos">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Ejercicio"/>
+        <tipo rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Flexibilidad"/>
+        <nombre>Estiramiento de brazos</nombre>
+        <parte_cuerpo>brazos</parte_cuerpo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#estiramiento_cuadriceps -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#estiramiento_cuadriceps">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Ejercicio"/>
+        <tipo rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Flexibilidad"/>
+        <nombre>Estiramiento de cuadriceps</nombre>
+        <parte_cuerpo>piernas</parte_cuerpo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#estiramiento_espalda -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#estiramiento_espalda">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Ejercicio"/>
+        <tipo rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Flexibilidad"/>
+        <nombre>Estiramiento de espalda</nombre>
+        <parte_cuerpo>espalda</parte_cuerpo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#estiramiento_gemelos -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#estiramiento_gemelos">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Ejercicio"/>
+        <tipo rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Flexibilidad"/>
+        <nombre>Estiramiento de los gemelos</nombre>
+        <parte_cuerpo>piernas</parte_cuerpo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#estiramiento_isquiotibiales -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#estiramiento_isquiotibiales">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Ejercicio"/>
+        <tipo rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Flexibilidad"/>
+        <tipo rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Resistencia"/>
+        <material>colchoneta</material>
+        <nombre>Estiramiento de isquiotibiales</nombre>
+        <parte_cuerpo>piernas</parte_cuerpo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#estiramiento_miembros_inferiores -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#estiramiento_miembros_inferiores">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Ejercicio"/>
+        <tipo rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Flexibilidad"/>
+        <nombre>Estiramiento de los miembros inferiores</nombre>
+        <parte_cuerpo>piernas</parte_cuerpo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#estiramiento_miembros_superiores -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#estiramiento_miembros_superiores">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Ejercicio"/>
+        <tipo rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Flexibilidad"/>
+        <nombre>Estiramiento de los miembros superiores</nombre>
+        <parte_cuerpo>brazos</parte_cuerpo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#estiramiento_muneca -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#estiramiento_muneca">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Ejercicio"/>
+        <tipo rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Flexibilidad"/>
+        <nombre>Estiramiento de muneca</nombre>
+        <parte_cuerpo>manos</parte_cuerpo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#estiramiento_pantorrillas -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#estiramiento_pantorrillas">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Ejercicio"/>
+        <tipo rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Flexibilidad"/>
+        <nombre>Estiramiento de pantorrillas</nombre>
+        <parte_cuerpo>piernas</parte_cuerpo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#estiramiento_pectorales -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#estiramiento_pectorales">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Ejercicio"/>
+        <tipo rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Flexibilidad"/>
+        <nombre>Estiramiento de pectorales</nombre>
+        <parte_cuerpo>pecho</parte_cuerpo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#estiramiento_tendones_muslo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#estiramiento_tendones_muslo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Ejercicio"/>
+        <tipo rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Flexibilidad"/>
+        <nombre>Estiramiento de los tendones del muslo</nombre>
+        <parte_cuerpo>piernas</parte_cuerpo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#estiramiento_tobillos -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#estiramiento_tobillos">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Ejercicio"/>
+        <tipo rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Flexibilidad"/>
+        <nombre>Estiramiento de tobillos</nombre>
+        <parte_cuerpo>pies</parte_cuerpo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#estiramiento_triceps -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#estiramiento_triceps">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Ejercicio"/>
+        <tipo rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Flexibilidad"/>
+        <nombre>Estiramiento de triceps</nombre>
+        <parte_cuerpo>brazos</parte_cuerpo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#extension_cadera -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#extension_cadera">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Ejercicio"/>
+        <tipo rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Equilibrio"/>
+        <tipo rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Resistencia"/>
+        <nombre>Extension de cadera</nombre>
+        <parte_cuerpo>cadera</parte_cuerpo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#extension_hombros -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#extension_hombros">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Ejercicio"/>
+        <tipo rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Flexibilidad"/>
+        <nombre>Extension de hombros</nombre>
+        <parte_cuerpo>brazos</parte_cuerpo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#extension_rodilla -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#extension_rodilla">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Ejercicio"/>
+        <tipo rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Resistencia"/>
+        <nombre>Extension de rodilla</nombre>
+        <parte_cuerpo>piernas</parte_cuerpo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#extension_triceps -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#extension_triceps">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Ejercicio"/>
+        <tipo rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Resistencia"/>
+        <nombre>Extension de triceps</nombre>
+        <parte_cuerpo>brazos</parte_cuerpo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#flexion_cadera -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#flexion_cadera">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Ejercicio"/>
+        <tipo rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Equilibrio"/>
+        <tipo rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Resistencia"/>
+        <nombre>Flexion de caderas</nombre>
+        <parte_cuerpo>cadera</parte_cuerpo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#flexion_extension_de_tobillos -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#flexion_extension_de_tobillos">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Ejercicio"/>
+        <tipo rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Resistencia"/>
+        <material>colchoneta</material>
+        <nombre>Flexion y extension de tobillos</nombre>
+        <parte_cuerpo>pies</parte_cuerpo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#flexion_hombros -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#flexion_hombros">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Ejercicio"/>
+        <tipo rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Flexibilidad"/>
+        <tipo rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Resistencia"/>
+        <nombre>Flexion de hombros</nombre>
+        <parte_cuerpo>brazos</parte_cuerpo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#flexion_plantar -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#flexion_plantar">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Ejercicio"/>
+        <tipo rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Equilibrio"/>
+        <tipo rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Resistencia"/>
+        <nombre>Flexion plantar</nombre>
+        <parte_cuerpo>pies</parte_cuerpo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#flexion_rodilla -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#flexion_rodilla">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Ejercicio"/>
+        <tipo rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Equilibrio"/>
+        <tipo rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Resistencia"/>
+        <nombre>Flexion de rodilla</nombre>
+        <parte_cuerpo>piernas</parte_cuerpo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#flexionar_piernas_alternativamente -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#flexionar_piernas_alternativamente">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Ejercicio"/>
+        <tipo rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Resistencia"/>
+        <material>colchoneta</material>
+        <nombre>Flexionar piernas alternativamente</nombre>
+        <parte_cuerpo>piernas</parte_cuerpo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#giros_cintura -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#giros_cintura">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Ejercicio"/>
+        <tipo rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Flexibilidad"/>
+        <nombre>Giros de cintura</nombre>
+        <parte_cuerpo>cintura</parte_cuerpo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#incontinencia_urinaria -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#incontinencia_urinaria">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Enfermedad"/>
+        <nombre>Incontinencia urinaria</nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#insuficiencia_renal_cronica -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#insuficiencia_renal_cronica">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Enfermedad"/>
+        <nombre>Insuficiencia renal cronica</nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#isometrico_lateral -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#isometrico_lateral">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Ejercicio"/>
+        <tipo rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Flexibilidad"/>
+        <nombre>Isometrico lateral</nombre>
+        <parte_cuerpo>brazos</parte_cuerpo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#lateralizacion_cuello -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#lateralizacion_cuello">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Ejercicio"/>
+        <tipo rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Flexibilidad"/>
+        <nombre>Lateralizacion de cuello</nombre>
+        <parte_cuerpo>cuello</parte_cuerpo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#lateralizacion_tronco -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#lateralizacion_tronco">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Ejercicio"/>
+        <tipo rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Flexibilidad"/>
+        <nombre>Lateralizacion del tronco</nombre>
+        <parte_cuerpo>torso</parte_cuerpo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#levantar_brazos_frontal -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#levantar_brazos_frontal">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Ejercicio"/>
+        <tipo rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Resistencia"/>
+        <nombre>Levantar brazos frontalmente</nombre>
+        <parte_cuerpo>brazos</parte_cuerpo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#levantar_brazos_lateral -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#levantar_brazos_lateral">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Ejercicio"/>
+        <tipo rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Resistencia"/>
+        <nombre>Levantar brazos lateralmente</nombre>
+        <parte_cuerpo>brazos</parte_cuerpo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#levantarse_de_una_silla -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#levantarse_de_una_silla">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Ejercicio"/>
+        <tipo rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Resistencia"/>
+        <nombre>Levantarse de una silla</nombre>
+        <parte_cuerpo>piernas</parte_cuerpo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#marcha -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#marcha">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Ejercicio"/>
+        <tipo rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Aerobico"/>
+        <nombre>Marcha</nombre>
+        <parte_cuerpo>piernas</parte_cuerpo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#nadar -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#nadar">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Ejercicio"/>
+        <tipo rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Aerobico"/>
+        <nombre>Nadar</nombre>
+        <parte_cuerpo>brazos</parte_cuerpo>
+        <parte_cuerpo>espalda</parte_cuerpo>
+        <parte_cuerpo>piernas</parte_cuerpo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#osteoporosis -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#osteoporosis">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Enfermedad"/>
+        <nombre>Osteoporosis</nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#press -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#press">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Ejercicio"/>
+        <tipo rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Resistencia"/>
+        <material>mancuernas</material>
+        <nombre>Press</nombre>
+        <parte_cuerpo>brazos</parte_cuerpo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#puente -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#puente">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Ejercicio"/>
+        <tipo rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Resistencia"/>
+        <material>colchoneta</material>
+        <nombre>Puente</nombre>
+        <parte_cuerpo>espalda</parte_cuerpo>
+        <parte_cuerpo>piernas</parte_cuerpo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#pullover -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#pullover">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Ejercicio"/>
+        <tipo rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Resistencia"/>
+        <material>mancuernas</material>
+        <nombre>Pullover</nombre>
+        <parte_cuerpo>brazos</parte_cuerpo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#remo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#remo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Ejercicio"/>
+        <tipo rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Resistencia"/>
+        <material>mancuernas</material>
+        <nombre>Remo</nombre>
+        <parte_cuerpo>brazos</parte_cuerpo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#rotacion_doble_cadera -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#rotacion_doble_cadera">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Ejercicio"/>
+        <tipo rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Flexibilidad"/>
+        <nombre>Rotacion doble de cadera</nombre>
+        <parte_cuerpo>cadera</parte_cuerpo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#rotacion_hombros -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#rotacion_hombros">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Ejercicio"/>
+        <tipo rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Flexibilidad"/>
+        <nombre>Rotacion de hombros</nombre>
+        <parte_cuerpo>brazos</parte_cuerpo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#rotacion_simple_cadera -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#rotacion_simple_cadera">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Ejercicio"/>
+        <tipo rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Flexibilidad"/>
+        <nombre>Rotacion simple de cadera</nombre>
+        <parte_cuerpo>cadera</parte_cuerpo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#rotadores_hombro -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#rotadores_hombro">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Ejercicio"/>
+        <tipo rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Flexibilidad"/>
+        <nombre>Rotadores de hombros</nombre>
+        <parte_cuerpo>brazos</parte_cuerpo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#sentadilla -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#sentadilla">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Ejercicio"/>
+        <tipo rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Flexibilidad"/>
+        <tipo rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Resistencia"/>
+        <nombre>Sentadillas</nombre>
+        <parte_cuerpo>piernas</parte_cuerpo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#silla_de_ruedas -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#silla_de_ruedas">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#CondicionFisica"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#subir_escaleras -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#subir_escaleras">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Ejercicio"/>
+        <tipo rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Flexibilidad"/>
+        <nombre>Subir escaleras</nombre>
+        <parte_cuerpo>piernas</parte_cuerpo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#tijeras_abdominales -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#tijeras_abdominales">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Ejercicio"/>
+        <tipo rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Resistencia"/>
+        <material>colchoneta</material>
+        <nombre>Tijeras abdominales</nombre>
+        <parte_cuerpo>abdominales</parte_cuerpo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#tocar_tobillo_con_mano -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#tocar_tobillo_con_mano">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Ejercicio"/>
+        <tipo rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Resistencia"/>
+        <material>colchoneta</material>
+        <nombre>Tocar el tobillo con la mano</nombre>
+        <parte_cuerpo>abdominales</parte_cuerpo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#trapecios -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#trapecios">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Ejercicio"/>
+        <tipo rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Resistencia"/>
+        <material>mancuernas</material>
+        <nombre>Trapecios</nombre>
+        <parte_cuerpo>espalda</parte_cuerpo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#triceps -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#triceps">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Ejercicio"/>
+        <tipo rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Resistencia"/>
+        <material>mancuernas</material>
+        <nombre>Triceps</nombre>
+        <parte_cuerpo>brazos</parte_cuerpo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#yoga -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#yoga">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Ejercicio"/>
+        <tipo rdf:resource="http://www.semanticweb.org/paloli/ontologies/2022/11/untitled-ontology-14#Aerobico"/>
+        <nombre>Yoga</nombre>
+        <parte_cuerpo>abdominales</parte_cuerpo>
+        <parte_cuerpo>brazos</parte_cuerpo>
+        <parte_cuerpo>piernas</parte_cuerpo>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

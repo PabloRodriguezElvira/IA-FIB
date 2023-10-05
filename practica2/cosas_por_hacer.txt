@@ -1,0 +1,4 @@
+- Cambiar clase enfermedad de Ontologia. Añadir clase sintoma -> {Enfermedad, Dolor}
+- Añadir que partes del cuerpo se ejercitan con cada ejercicio.
+- Crear regla: tiene-enfermedadX, comprueba si la persona tiene la enfermedad X y asserta el tipo/tipos de ejercicio a incrementar.
+

@@ -1,0 +1,5 @@
+(clear)
+(load "/home/paloli/Documentos/q5/ia/practica2/Practica-IA-CLIPS/ontologiaCLIPS.clp")
+(load "/home/paloli/Documentos/q5/ia/practica2/Practica-IA-CLIPS/preguntas.clp")
+(reset)
+(run)

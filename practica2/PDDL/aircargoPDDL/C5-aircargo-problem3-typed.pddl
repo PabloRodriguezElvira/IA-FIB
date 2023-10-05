@@ -1,0 +1,37 @@
+(define (problem aircargo10cg3av5ae) (:domain aircargoTyped)
+(:objects
+	A1 A2 A3 - avion
+	C1 C2 C3 C4 C5 C6 C7 C8 C9 C10 - carga
+	JFK SFO BCN CDG AMS - aeropuerto
+)
+(:init
+  (En C1 SFO)
+  (En C2 JFK)
+  (En C3 JFK)
+  (En C4 BCN)
+  (En C5 BCN)
+  (En C6 AMS)
+  (En C7 AMS)
+  (En C8 CDG)
+  (En C9 CDG)
+  (En C10 SFO)
+  (En A1 SFO)
+  (En A2 JFK)
+  (En A3 BCN)
+)
+(:goal (and
+    (En C1 JFK)
+    (En C2 SFO)
+    (En C3 CDG)
+    (En C4 AMS)
+    (En C5 SFO)
+    (En C6 CDG)
+    (En C7 JFK)
+    (En C8 BCN)
+    (En C9 JFK)
+    (En C10 AMS)
+    (En A1 SFO)
+    (En A2 JFK)
+    (En A3 BCN)
+	)
+))

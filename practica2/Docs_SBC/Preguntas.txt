@@ -1,0 +1,50 @@
+Preguntas:
+
+1. Nombre:
+
+2. Edad:
+
+3. Sexo: (M -> Masculino, F -> Femenino, NS -> Prefiero no decirlo)
+
+4. Altura:
+
+5. Indique su nivel de actividad física actualmente:
+	a. Nada
+	b. De vez en cuando
+	c. Frecuentemente 
+
+6. Padece alguna enfermedad o lesión de la siguiente lista, puede decir una o más:
+	a. Cardiaca
+	b. Diabetes
+	c. Artrosis
+	d. Insuficiencia renal crónica
+	e. Depresión
+	f. Caída/s
+	g. Osteoporosis
+	h. Incontinencia urinaria
+	i. Ninguna
+
+7. ¿Tiene alguna condición física que no le permita hacer ciertos ejercicios?
+	a. Silla de ruedas
+	b. Problema en los brazos
+	c. Ninguna
+
+8. Indique su frecuencia cardíaca (por minuto):
+
+9. Indique el número de días que quiere/puede entrenar:
+
+10. Indique la duración, entre 30-90 minutos, del entrenamiento que desea/dispone:
+
+11. Indique la dependencia de terceras personas, en el caso que tenga, a la hora de poder realizar un ejercicio? 
+	1. Independiente
+	2. Dependiente
+	3. Muy dependiente
+
+12. ¿Dispone de material para realizar ejercicios?
+	a. Mancuernas
+	b. Colchoneta
+	c. Cinta de caminar
+	d. Bicicleta estática
+	e. Piscina
+	f. Nada
+

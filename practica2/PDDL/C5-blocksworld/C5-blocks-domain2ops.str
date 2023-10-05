@@ -1,0 +1,17 @@
+//;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+//;;; 2 Op-blocks world
+//;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+colocar(x,y):
+
+ontable(x),clear(x),clear(y),handempty().
+ontable(x),clear(y).
+on(x,y).
+
+
+despejar(x,y):
+
+on(x,y),clear(x),handempty().
+on(x,y).
+ontable(x),clear(y).
+
